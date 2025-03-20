@@ -1,0 +1,51 @@
+<groupdef id="pledit.shade.content.songdisplay">
+	<text
+	id="shadesongticker" ticker="0"
+	y="1"
+	relatw="1" w="-52"
+	relath="1" 
+	display="songname" default="" showlen="0"
+	font="playlist.text"
+	dblClickAction="SWITCH;normal" 
+	nograb="1"
+	move="1"
+	/>
+
+	<text x="-38" relatx="1" h="0" relath="1" y="1"
+		display="songlength" 
+		font="playlist.text"
+		dblClickAction="SWITCH;normal" 
+		nograb="1"
+		move="1"
+	/>
+</groupdef>
+
+<layout id="shade" background="pledit.winshade.bg" minimum_w="275" linkwidth="normal">
+	<layer id="cover.left" x="0" y="0" image="pledit.cover.left"/>
+
+	<group id="pledit.shade.content.songdisplay" x="6" y="0" w="-42" h="0" relatw="1" relath="1"/>
+
+	<layer id="sizer" x="-47" relatx="1" y="3" resize="right" image="global.button.stretch" inactiveAlpha="200"/>
+
+  	<layer id="cover.right" relatx="1" x="-10" y="0" image="pledit.cover.right"/>
+
+	<button
+		id="winshade"
+		action="SWITCH" param="normal"
+		x="-31" y="3" relatx="1"
+		image="global.button.shade2"
+		downImage="global.button.shade2.pressed"
+		tooltip="Full Playlist Window"
+		inactiveAlpha="200"
+	/>
+  
+	<button
+		id="Close" 
+		action="CLOSE"
+		x="-15" y="3" relatx="1"
+		image="global.button.close"
+		downImage="global.button.close.pressed"
+		tooltip="Close Playlist"
+		inactiveAlpha="200"
+	/>
+</layout>

@@ -1,0 +1,395 @@
+<elements>
+	<!-- Tooltip -->
+	<!--<bitmap id="wasabi.tooltip.top.left" file="player/tooltips-elements.png" x="0" y="0" h="2" w="2"/> <bitmap id="wasabi.tooltip.top" file="player/tooltips-elements.png" x="2" y="0" h="2" w="11"/> <bitmap id="wasabi.tooltip.top.right" file="player/tooltips-elements.png" x="15" y="0" h="2" w="2"/> <bitmap id="wasabi.tooltip.left" file="player/tooltips-elements.png" x="0" y="2" h="11" w="2"/> <bitmap id="wasabi.tooltip.center" file="player/tooltips-elements.png" x="2" y="2" h="11" w="11"/> <bitmap id="wasabi.tooltip.right" file="player/tooltips-elements.png" x="15" y="2" h="11" w="2"/> <bitmap id="wasabi.tooltip.bottom.left" file="player/tooltips-elements.png" x="0" y="15" h="2" w="2"/> <bitmap id="wasabi.tooltip.bottom" file="player/tooltips-elements.png" x="2" y="15" h="2" w="11"/> <bitmap id="wasabi.tooltip.bottom.right" file="player/tooltips-elements.png" x="15" y="15" h="2" w="2"/>-->
+	<!--<groupdef id="wasabi.tooltip.group" inherit_content="1"><sendparams target="tooltip.text" color="230,243,230"/></groupdef>-->
+
+
+
+	<!-- Playlist -->
+	<color id="pledit.text" value="92,61,0" gammagroup="Text"/>				<!-- text color in editor -->
+	<color id="pledit.text.readonly" value="92,61,0" gammagroup="Text"/>			<!-- text color in editor -->
+	<color id="pledit.text.current" value="255,255,255" gammagroup="Text"/>		<!-- current playback file foreground -->
+	<color id="pledit.text.disabled" value="128,128,128" gammagroup="Text"/>		<!-- disabled entries -->
+	<color id="pledit.currentoutline" value="153,102,0"/>					<!-- current playback file outline color -->
+	<color id="pledit.dir.plitem" value="92,61,0" gammagroup="Text"/>			<!-- playlist directory item foreground -->
+	<color id="pledit.dir.plitem.currect" value="248,248,0" gammagroup="Text"/>		<!-- playlist directory item current rectangle marker -->
+	<bitmap id="pledit.dropind" file="images/playlist_dropindicator.png"/>		<!-- shows where dragged song(s) will be placed -->
+	<bitmap id="pledit.marker" file="images/playlist_marker.png"/>
+	<bitmap id="pledit.winshade.bg" file="images/winshade_background.png" gammagroup="Background"/>
+	<bitmap id="pledit.cover.left" file="images/winshade_background.png" gammagroup="Background" x="0" y="0" h="15" w="10"/>
+	<bitmap id="pledit.cover.right" file="images/winshade_background.png" gammagroup="Background" x="265" y="0" h="15" w="10"/>
+	<bitmapfont id="playlist.text" file="fonts/defined.png" charwidth="5" charheight="6" hspacing="0" vspacing="0" gammagroup="Text"/>
+
+
+
+	<!-- Player / Main Window -->
+	<bitmap id="player.main.bgNT" file="images/player_background_NT.png" gammagroup="Background"/>
+	<bitmap id="player.main.bg9x" file="images/player_background_9x.png" gammagroup="Background"/>
+	<bitmap id="player.overlay.1" file="images/player_overlay_1.png" gammagroup="Foreground"/>
+	<bitmap id="player.overlay.2" file="images/player_overlay_2.png" gammagroup="Foreground"/>
+	<bitmap id="player.volume" file="images/player_volume.png" gammagroup="Background"/>
+	<bitmap id="player.volume.bg" file="images/player_volume_bg.png" gammagroup="Background"/>
+	<bitmap id="player.seekImage" file="images/player_seek.png" gammagroup="Background"/>
+	<bitmap id="player.shade.bg" file="images/winshade_background.png" gammagroup="Background"/>
+	<bitmap id="player.shade.placeHolder" file="images/player_shade_placeholder.png" gammagroup="Foreground"/>
+	<bitmap id="player.shade.button.previous" file="images/player_buttons.png" x="0" y="0" h="9" w="14" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.previous.pressed" file="images/player_buttons.png" x="0" y="9" h="9" w="14" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.play" file="images/player_buttons.png" x="14" y="0" h="9" w="11" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.play.pressed" file="images/player_buttons.png" x="14" y="9" h="9" w="11" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.pause" file="images/player_buttons.png" x="25" y="0" h="9" w="11" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.pause.pressed" file="images/player_buttons.png" x="25" y="9" h="9" w="11" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.stop" file="images/player_buttons.png" x="36" y="0" h="9" w="11" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.stop.pressed" file="images/player_buttons.png" x="36" y="9" h="9" w="11" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.next" file="images/player_buttons.png" x="47" y="0" h="9" w="14" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.next.pressed" file="images/player_buttons.png" x="47" y="9" h="9" w="14" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.eject" file="images/player_buttons.png" x="61" y="0" h="9" w="13" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.eject.pressed" file="images/player_buttons.png" x="61" y="9" h="9" w="13" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.winshade" file="images/window_buttons.png" x="277" y="0" h="9" w="14" gammagroup="Buttons"/>
+	<bitmap id="player.shade.button.winshade.pressed" file="images/window_buttons.png" x="277" y="9" h="9" w="14" gammagroup="Buttons"/>
+	<bitmap id="player.titlebar.active.left" file="images/window_buttons.png" x="341" y="26" h="7" w="7" gammagroup="Buttons"/>
+	<bitmap id="player.titlebar.active.center" file="images/window_buttons.png" x="349" y="26" h="7" w="7" gammagroup="Buttons"/>
+	<bitmap id="player.titlebar.active.right" file="images/window_buttons.png" x="357" y="26" h="7" w="7" gammagroup="Buttons"/>
+	<bitmap id="player.titlebar.inactive.left" file="images/window_buttons.png" x="341" y="34" h="7" w="7" gammagroup="Buttons"/>
+	<bitmap id="player.titlebar.inactive.center" file="images/window_buttons.png" x="349" y="34" h="7" w="7" gammagroup="Buttons"/>
+	<bitmap id="player.titlebar.inactive.right" file="images/window_buttons.png" x="357" y="34" h="7" w="7" gammagroup="Buttons"/>
+	<bitmap id="player.button.previous" file="images/buttons_previous.png" gammagroup="Background"/>
+	<bitmap id="player.button.pause" file="images/buttons_pause.png" gammagroup="Background"/>
+	<bitmap id="player.button.play" file="images/buttons_play.png" gammagroup="Background"/>
+	<bitmap id="player.button.next" file="images/buttons_next.png" gammagroup="Background"/>
+	<bitmap id="player.button.stop" file="images/buttons_stop.png" gammagroup="Background"/>
+	<bitmap id="player.button.open" file="images/buttons_open.png" gammagroup="Background"/>
+	<bitmap id="player.button.winshade.normal" file="images/buttons_winshade_normal.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.winshade.over" file="images/buttons_winshade_over.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.winshade.down" file="images/buttons_winshade_down.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.systray.normal" file="images/buttons_systray_normal.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.systray.over" file="images/buttons_systray_over.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.systray.down" file="images/buttons_systray_down.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.close.normal" file="images/buttons_close_normal.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.close.over" file="images/buttons_close_over.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.close.down" file="images/buttons_close_down.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.eq.normal" file="images/buttons_eq_normal.png" gammagroup="Text"/>
+	<bitmap id="player.button.eq.over" file="images/buttons_eq_over.png" gammagroup="Text"/>
+	<bitmap id="player.button.eq.down" file="images/buttons_eq_down.png" gammagroup="Text"/>
+	<bitmap id="player.button.tg.normal" file="images/buttons_tg_normal.png" gammagroup="Text"/>
+	<bitmap id="player.button.tg.over" file="images/buttons_tg_over.png" gammagroup="Text"/>
+	<bitmap id="player.button.tg.down" file="images/buttons_tg_down.png" gammagroup="Text"/>
+	<bitmap id="player.button.ml.normal" file="images/buttons_ml_normal.png" gammagroup="Text"/>
+	<bitmap id="player.button.ml.over" file="images/buttons_ml_over.png" gammagroup="Text"/>
+	<bitmap id="player.button.ml.down" file="images/buttons_ml_down.png" gammagroup="Text"/>
+	<bitmap id="player.button.pl.normal" file="images/buttons_pl_normal.png" gammagroup="Text"/>
+	<bitmap id="player.button.pl.over" file="images/buttons_pl_over.png" gammagroup="Text"/>
+	<bitmap id="player.button.pl.down" file="images/buttons_pl_down.png" gammagroup="Text"/>
+	<bitmap id="player.button.crossfade" file="images/buttons_crossfade.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.loop" file="images/buttons_loop.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.shuffle" file="images/buttons_shuffle.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.crossfade.fake" file="images/buttons_crossfade_fake.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.loop.fake" file="images/buttons_loop_fake.png" gammagroup="Foreground"/>
+	<bitmap id="player.button.shuffle.fake" file="images/buttons_shuffle_fake.png" gammagroup="Foreground"/>
+	<bitmap id="player.circle.white" file="images/player_circle_white.png" gammagroup="Eyes"/>
+	<bitmap id="player.circle.black" file="images/player_circle_black.png" gammagroup="Eyes"/>
+	<bitmapfont id="player.text" file="fonts/text.png" charwidth="6" charheight="7" hspacing="0" vspacing="0" gammagroup="Text"/>
+	<bitmapfont id="player.number" file="fonts/number.png" charwidth="7" charheight="11" hspacing="2" vspacing="0" gammagroup="Text"/>
+
+
+
+	<!-- Thinger -->
+	<bitmap id="thinger.background" file="images/thinger_background.png" gammagroup="Background"/>
+	<bitmap id="thinger.placeholder" file="images/thinger_placeholder.png" gammagroup="Foreground"/>
+	<bitmap id="thinger.winshade.bg" file="images/winshade_background.png" gammagroup="Background"/>
+	<bitmap id="thinger.button.winshade" file="images/window_buttons.png" gammagroup="Buttons" x="305" y="0" h="9" w="14"/>
+	<bitmap id="thinger.button.winshade.pressed" file="images/window_buttons.png" gammagroup="Buttons" x="305" y="9" h="9" w="14"/>
+	<bitmap id="thinger.button.winshade2" file="images/window_buttons.png" gammagroup="Buttons" x="263" y="0" h="9" w="14"/>
+	<bitmap id="thinger.button.winshade2.pressed" file="images/window_buttons.png" gammagroup="Buttons" x="263" y="9" h="9" w="14"/>
+	<bitmap id="thinger.button.close" file="images/window_buttons.png" gammagroup="Buttons" x="333" y="0" h="9" w="10"/>
+	<bitmap id="thinger.button.close.pressed" file="images/window_buttons.png" gammagroup="Buttons" x="333" y="9" h="9" w="10"/>
+	<bitmap id="thinger.scroll.left" file="images/thinger_buttons.png" gammagroup="Buttons" x="0" y="0" h="33" w="13"/>
+	<bitmap id="thinger.scroll.left.pressed" file="images/thinger_buttons.png" gammagroup="Buttons" x="13" y="0" h="33" w="13"/>
+	<bitmap id="thinger.scroll.right" file="images/thinger_buttons.png" gammagroup="Buttons" x="26" y="0" h="33" w="13"/>
+	<bitmap id="thinger.scroll.right.pressed" file="images/thinger_buttons.png" gammagroup="Buttons" x="39" y="0" h="33" w="13"/>
+	<bitmap id="thinger.scroll.shade.left" file="images/thinger_arrow_left_normal.png" gammagroup="Buttons" h="9" w="10"/>
+	<bitmap id="thinger.scroll.shade.left.pressed" file="images/thinger_arrow_left_down.png" gammagroup="Buttons" h="9" w="10"/>
+	<bitmap id="thinger.scroll.shade.right" file="images/thinger_arrow_right_normal.png" gammagroup="Buttons" h="9" w="10"/>
+	<bitmap id="thinger.scroll.shade.right.pressed" file="images/thinger_arrow_right_down.png" gammagroup="Buttons" h="9" w="10"/>
+	<bitmap id="thinger.cover" file="images/winshade_background.png" gammagroup="Background" x="2" y="1" h="12" w="100"/>
+
+
+
+	<!-- Equalizer -->
+	<bitmap id="equalizer.placeholder" file="images/equalizer_placeholder.png" gammagroup="Background" x="104" y="0" h="90" w="244"/>
+	<bitmap id="equalizer.label.balance" file="images/equalizer_placeholder.png" x="0" y="73" h="5" w="27"/>
+	<bitmap id="equalizer.label.crossfade" file="images/equalizer_placeholder.png" x="27" y="73" h="5" w="35"/>
+	<bitmap id="equalizer.switch.on.disabled" file="images/equalizer_placeholder.png" x="8" y="0" h="11" w="23" gammagroup="Buttons"/>
+	<bitmap id="equalizer.switch.on.pressed" file="images/equalizer_placeholder.png" x="8" y="11" h="11" w="23" gammagroup="Buttons"/>
+	<bitmap id="equalizer.switch.on.enabled" file="images/equalizer_placeholder.png" x="8" y="22" h="11" w="23" gammagroup="Buttons"/>
+	<bitmap id="equalizer.switch.auto.disabled" file="images/equalizer_placeholder.png" x="32" y="0" h="11" w="31" gammagroup="Buttons"/>
+	<bitmap id="equalizer.switch.auto.pressed" file="images/equalizer_placeholder.png" x="32" y="11" h="11" w="31" gammagroup="Buttons"/>
+	<bitmap id="equalizer.switch.auto.enabled" file="images/equalizer_placeholder.png" x="32" y="22" h="11" w="31" gammagroup="Buttons"/>
+	<bitmap id="equalizer.button.presets" file="images/equalizer_placeholder.png" x="63" y="0" h="11" w="41" gammagroup="Buttons"/>
+	<bitmap id="equalizer.button.presets.pressed" file="images/equalizer_placeholder.png" x="63" y="11" h="11" w="41" gammagroup="Buttons"/>
+	<bitmap id="equalizer.slider.bar" file="images/equalizer_placeholder.png" x="0" y="0" h="61" w="8" gammagroup="Background"/>
+	<bitmap id="equalizer.slider.button" file="images/equalizer_placeholder.png" x="8" y="45" h="12" w="16" gammagroup="Buttons"/>
+	<bitmap id="equalizer.slider.button.pressed" file="images/equalizer_placeholder.png" x="8" y="33" h="12" w="16" gammagroup="Buttons"/>
+	<bitmap id="equalizer.slider.horizontal.bar.label" file="images/equalizer_placeholder.png" x="0" y="61" h="4" w="77"/>
+	<bitmap id="equalizer.slider.horizontal.bar" file="images/equalizer_placeholder.png" x="0" y="65" h="8" w="77"/>
+	<bitmap id="equalizer.slider.horizontal.button" file="images/equalizer_placeholder.png" x="76" y="22" h="13" w="17" gammagroup="Buttons"/>
+	<bitmap id="equalizer.slider.horizontal.button.pressed" file="images/equalizer_placeholder.png" x="76" y="35" h="13" w="17" gammagroup="Buttons"/>
+	<bitmap id="equalizer.winshade.bg" file="images/winshade_background.png" gammagroup="Background"/>
+	<bitmap id="equalizer.winshade.placeHolder" file="images/equalizer_winshade_placeholder.png" gammagroup="Background"/>
+	<bitmap id="equalizer.winshade.button.slider" file="images/equalizer_placeholder.png" gammagroup="Buttons" x="54" y="34" h="9" w="11"/>
+	<bitmap id="equalizer.winshade.button.slider.pressed" file="images/equalizer_placeholder.png" gammagroup="Buttons" x="65" y="34" h="9" w="11"/>
+
+
+
+	<!-- Video -->
+	<bitmap id="video.button.previous" file="images/window_buttons.png" x="223" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.previous.pressed" file="images/window_buttons.png" x="223" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.play" file="images/window_buttons.png" x="243" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.play.pressed" file="images/window_buttons.png" x="243" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.pause" file="images/window_buttons.png" x="263" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.pause.pressed" file="images/window_buttons.png" x="263" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.stop" file="images/window_buttons.png" x="283" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.stop.pressed" file="images/window_buttons.png" x="283" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.next" file="images/window_buttons.png" x="303" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.next.pressed" file="images/window_buttons.png" x="303" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.open" file="images/window_buttons.png" x="323" y="18" h="15" w="20" gammagroup="Buttons"/>
+	<bitmap id="video.button.open.pressed" file="images/window_buttons.png" x="323" y="18" h="15" w="20" gammagroup="Buttons"/>
+
+
+
+	<!-- these provide the border for all generic windows -->
+	<bitmap id="global.bg.bp"	file="images/winshade_background.png" gammagroup="Background" x="1" y="1" h="1" w="1"/>
+	<bitmap id="global.bg.tl"	file="images/winshade_background.png" gammagroup="Background" x="0" y="0" h="14" w="100"/>
+	<bitmap id="global.bg.tl2"	file="images/winshade_background.png" gammagroup="Background" x="0" y="0" h="3" w="5"/>
+	<bitmap id="global.bg.tc"	file="images/winshade_background.png" gammagroup="Background" x="2" y="0" h="14" w="100"/>
+	<bitmap id="global.bg.tc2"	file="images/winshade_background.png" gammagroup="Background" x="2" y="0" h="3" w="100"/>
+	<bitmap id="global.bg.tc3"	file="images/winshade_background.png" gammagroup="Background" x="3" y="1" h="5" w="100"/>
+	<bitmap id="global.bg.tr"	file="images/winshade_background.png" gammagroup="Background" x="154" y="0" h="14" w="200"/>
+	<bitmap id="global.bg.tr2"	file="images/winshade_background.png" gammagroup="Background" x="270" y="0" h="3" w="5"/>
+	<bitmap id="global.bg.ml"	file="images/winshade_background.png" gammagroup="Background" x="0" y="2" h="11" w="5"/>
+	<bitmap id="global.bg.mr"	file="images/winshade_background.png" gammagroup="Background" x="270" y="2" h="11" w="5"/>
+	<bitmap id="global.bg.bl"	file="images/winshade_background.png" gammagroup="Background" x="0" y="10" h="5" w="100"/>
+	<bitmap id="global.bg.bc"	file="images/winshade_background.png" gammagroup="Background" x="5" y="10" h="5" w="100"/>
+	<bitmap id="global.bg.bc2"	file="images/winshade_background.png" gammagroup="Background" x="5" y="10" h="4" w="100"/>
+	<bitmap id="global.bg.br"	file="images/winshade_background.png" gammagroup="Background" x="270" y="9" h="6" w="5"/>
+
+
+	<!-- these are all buttons that appear at the top of a window -->
+	<bitmap id="global.button.menu"			file="images/window_buttons.png" gammagroup="Buttons" x="235" y="0" h="9" w="14"/>
+	<bitmap id="global.button.menu.pressed"		file="images/window_buttons.png" gammagroup="Buttons" x="235" y="9" h="9" w="14"/>
+	<bitmap id="global.button.shade"			file="images/window_buttons.png" gammagroup="Buttons" x="305" y="0" h="9" w="14"/>
+	<bitmap id="global.button.shade.pressed"		file="images/window_buttons.png" gammagroup="Buttons" x="305" y="9" h="9" w="14"/>
+	<bitmap id="global.button.shade2"			file="images/window_buttons.png" gammagroup="Buttons" x="263" y="0" h="9" w="14"/>
+	<bitmap id="global.button.shade2.pressed"		file="images/window_buttons.png" gammagroup="Buttons" x="263" y="9" h="9" w="14"/>
+	<bitmap id="global.button.shade3" 			file="images/window_buttons.png" gammagroup="Buttons" x="277" y="0" h="9" w="14"/>
+	<bitmap id="global.button.shade3.pressed"		file="images/window_buttons.png" gammagroup="Buttons" x="277" y="9" h="9" w="14"/>
+	<bitmap id="global.button.stretch"			file="images/window_buttons.png" gammagroup="Buttons" x="249" y="0" h="9" w="14"/>
+	<bitmap id="global.button.stretch.pressed"	file="images/window_buttons.png" gammagroup="Buttons" x="249" y="9" h="9" w="14"/>
+	<bitmap id="global.button.close"			file="images/window_buttons.png" gammagroup="Buttons" x="333" y="0" h="9" w="10"/>
+	<bitmap id="global.button.close.pressed"		file="images/window_buttons.png" gammagroup="Buttons" x="333" y="9" h="9" w="10"/>
+	<bitmap id="global.button.minimize"		file="images/window_buttons.png" gammagroup="Buttons" x="319" y="0" h="9" w="14"/>
+	<bitmap id="global.button.minimize.pressed"	file="images/window_buttons.png" gammagroup="Buttons" x="319" y="9" h="9" w="14"/>
+	<bitmap id="global.button.extend"			file="images/window_buttons.png" gammagroup="Buttons" x="221" y="0" h="9" w="14"/>
+	<bitmap id="global.button.extend.pressed"		file="images/window_buttons.png" gammagroup="Buttons" x="221" y="9" h="9" w="14"/>
+	<bitmap id="global.button.unextend"		file="images/window_buttons.png" gammagroup="Buttons" x="207" y="0" h="9" w="14"/>
+	<bitmap id="global.button.unextend.pressed"	file="images/window_buttons.png" gammagroup="Buttons" x="207" y="9" h="9" w="14"/>
+
+
+	<!-- Message box -->
+	<color id="studio.msgBox.background" value="32,32,32"/>	<!-- Messagebox background color -->
+	<color id="studio.textBar.text" value="255,255,255"/>		<!-- Text object & message box text color -->
+	<color id="studio.textBar.background" value="32,32,32"/>	<!-- Text object & message box text background color -->
+
+
+	<!-- Buttons -->
+	<color id="studio.button.text" value="255,255,225"/>		<!-- Buttons text color -->
+	<color id="studio.button.hiliteText" value="255,240,255"/>	<!-- Buttons hilite text color, used by tab windows-->
+	<color id="studio.button.dimmedText" value="64,64,64"/>	<!-- Buttons dimmed text color, when disabled -->
+
+
+	<!-- Popup menus -->
+	<color id="studio.popup.text" value="92,61,0" gammagroup="Text"/>			<!-- Menu items text color -->
+	<color id="studio.popup.hiliteText" value="255,255,255" gammagroup="Text"/>		<!-- Hilited item text color -->
+	<color id="studio.popup.dimmedText" value="64,64,64" gammagroup="Text"/>		<!-- Disabled item text color -->
+
+
+	<!-- Components -->
+	<color id="studio.status.text" value="248,248,248" gammagroup="Text"/>	<!-- Component status text color when using TTF -->
+	<color id="studio.component.title.foreground" value="255,255,255"/>		<!-- Component title bar text color when using TTF -->
+	<color id="studio.component.title.border" value="1,1,1"/>			<!-- Component title bar text outline when using TTF -->
+
+
+	<!-- Labeled Windows -->
+	<color id="common.labelwnd.foreground" value="220,220,220"/>	<!-- Text foreground color -->
+	<color id="common.labelwnd.background" value="0,0,0"/>		<!-- Text drop shadow color -->
+
+
+	<!-- edit wnds -->
+	<color id="wasabi.edit.selection" value="127,127,127" gammagroup="Backgrounds"/> <!-- Selected text -->
+	<color id="wasabi.edit.text" value="255,255,255" gammagroup="Text"/> <!--Text -->
+	<color id="wasabi.edit.background" value="0,0,0" gammagroup="Backgrounds"/> <!--Text background -->
+
+
+	<!-- Frame windows -->
+	<bitmap id="studio.basetexture" file="images/application_background.png" gammagroup="Foreground"/> <!-- Application base texture -->
+
+
+	<!-- Generic Lists and Trees -->
+	<bitmap id="studio.tree.tab.closed" file="images/tree_tab_closed.png"/>
+	<bitmap id="studio.tree.tab.open" file="images/tree_tab_open.png"/>
+	<bitmap id="studio.tree.link.top.bottom" file="images/tree_link_tab_top_bottom.png"/>
+	<bitmap id="studio.tree.link.top.right" file="images/tree_link_tab_top_right.png"/>
+	<bitmap id="studio.tree.link.top.rightBottom" file="images/tree_link_top_right_bottom.png"/>
+	<bitmap id="studio.tree.link.tab.top.bottom" file="images/tree_link_tab_top_bottom.png"/>
+	<bitmap id="studio.tree.link.tab.top.right" file="images/tree_link_tab_top_right.png"/>
+	<bitmap id="studio.tree.link.tab.top.rightBottom" file="images/tree_link_tab_top_right_bottom.png"/>
+
+
+	<!-- List & Tree scrollbars -->
+	<bitmap id="studio.scrollbar.horizontal.left"			file="images/window_elements.png" gammagroup="Buttons" x="40" y="13" h="13" w="17"/>
+	<bitmap id="studio.scrollbar.horizontal.left.hilite"		file="images/window_elements.png" gammagroup="Buttons" x="40" y="26" h="13" w="17"/>
+	<bitmap id="studio.scrollbar.horizontal.left.pressed"		file="images/window_elements.png" gammagroup="Buttons" x="40" y="39" h="13" w="17"/>
+	<bitmap id="studio.scrollbar.horizontal.right"			file="images/window_elements.png" gammagroup="Buttons" x="98" y="13" h="13" w="17"/>
+	<bitmap id="studio.scrollbar.horizontal.right.hilite"		file="images/window_elements.png" gammagroup="Buttons" x="98" y="26" h="13" w="17"/>
+	<bitmap id="studio.scrollbar.horizontal.right.pressed"		file="images/window_elements.png" gammagroup="Buttons" x="98" y="39" h="13" w="17"/>
+	<bitmap id="studio.scrollbar.horizontal.button"			file="images/window_elements.png" gammagroup="Buttons" x="57" y="13" h="13" w="41"/>
+	<bitmap id="studio.scrollbar.horizontal.button.hilite"		file="images/window_elements.png" gammagroup="Buttons" x="57" y="26" h="13" w="41"/>
+	<bitmap id="studio.scrollbar.horizontal.button.pressed"	file="images/window_elements.png" gammagroup="Buttons" x="57" y="39" h="13" w="41"/>
+	<bitmap id="studio.scrollbar.vertical.left"			file="images/window_elements.png" gammagroup="Buttons" x="0" y="38" h="17" w="13"/>
+	<bitmap id="studio.scrollbar.vertical.left.hilite"		file="images/window_elements.png" gammagroup="Buttons" x="13" y="38" h="17" w="13"/>
+	<bitmap id="studio.scrollbar.vertical.left.pressed"		file="images/window_elements.png" gammagroup="Buttons" x="26" y="38" h="17" w="13"/>
+	<bitmap id="studio.scrollbar.vertical.right"			file="images/window_elements.png" gammagroup="Buttons" x="0" y="96" h="17" w="13"/>
+	<bitmap id="studio.scrollbar.vertical.right.hilite"		file="images/window_elements.png" gammagroup="Buttons" x="13" y="96" h="17" w="13"/>
+	<bitmap id="studio.scrollbar.vertical.right.pressed"		file="images/window_elements.png" gammagroup="Buttons" x="26" y="96" h="17" w="13"/>
+	<bitmap id="studio.scrollbar.vertical.button"			file="images/window_elements.png" gammagroup="Buttons" x="0" y="55" h="41" w="13"/>
+	<bitmap id="studio.scrollbar.vertical.button.hilite"		file="images/window_elements.png" gammagroup="Buttons" x="13" y="55" h="41" w="13"/>
+	<bitmap id="studio.scrollbar.vertical.button.pressed"		file="images/window_elements.png" gammagroup="Buttons" x="26" y="55" h="41" w="13"/>
+
+
+	<!-- Library Lists & Trees backgrounds (tiles) -->
+	<bitmap id="library.results.background"		file="images/library_results.png" gammagroup="Buttons"/>
+	<bitmap id="library.directory.background"		file="images/library_directory.png" gammagroup="Buttons"/>
+	<bitmap id="library.subtree.background"		file="images/library_subtree.png" gammagroup="Buttons"/>
+
+
+	<!-- Generic seekers/sliders -->
+	<bitmap id="studio.seekbar.left" file="images/seekbar_left.png" gammagroup="Buttons"/>
+	<bitmap id="studio.seekbar.middle" file="images/seekbar_middle.png" gammagroup="Buttons"/>
+	<bitmap id="studio.seekbar.right" file="images/seekbar_right.png" gammagroup="Buttons"/>
+	<bitmap id="studio.seekbar.button.nonpressed" file="images/seekbar_button.png" gammagroup="Buttons"/>
+	<bitmap id="studio.seekbar.button.pressed" file="images/seekbar_button_pressed.png" gammagroup="Buttons"/>
+
+
+	<!-- labelwnd titles -->
+	<bitmap id="studio.label.upperLeft" file="images/labelwindow.png" x="0" y="0" w="3" h="3" />
+	<bitmap id="studio.label.top" file="images/labelwindow.png" x="3" y="0" w="8" h="3" />
+	<bitmap id="studio.label.upperRight" file="images/labelwindow.png" x="11" y="0" w="3" h="3" />
+	<bitmap id="studio.label.left" file="images/labelwindow.png" x="0" y="3" w="3" h="8" />
+	<bitmap id="studio.label.middle" file="images/labelwindow.png" x="3" y="3" w="8" h="8" />
+	<bitmap id="studio.label.right" file="images/labelwindow.png" x="11" y="3" w="3" h="8" />
+	<bitmap id="studio.label.lowerLeft" file="images/labelwindow.png" x="0" y="11" w="3" h="3" />
+	<bitmap id="studio.label.bottom" file="images/labelwindow.png" x="3" y="11" w="8" h="3" />
+	<bitmap id="studio.label.lowerRight" file="images/labelwindow.png" x="11" y="11" w="3" h="3" />
+
+
+	<!-- default button -->
+	<bitmap id="studio.button.upperLeft"		file="images/window_elements.png" gammagroup="Buttons" x="1" y="135" h="2" w="2"/>
+	<bitmap id="studio.button.top" 			file="images/window_elements.png" gammagroup="Buttons" x="5" y="135" h="2" w="25"/>
+	<bitmap id="studio.button.upperRight"		file="images/window_elements.png" gammagroup="Buttons" x="32" y="135" h="2" w="2"/>
+	<bitmap id="studio.button.left"			file="images/window_elements.png" gammagroup="Buttons" x="1" y="139" h="25" w="2"/>
+	<bitmap id="studio.button.middle" 			file="images/window_elements.png" gammagroup="Buttons" x="5" y="139" h="25" w="25"/>
+	<bitmap id="studio.button.right"			file="images/window_elements.png" gammagroup="Buttons" x="32" y="139" h="25" w="2"/>
+	<bitmap id="studio.button.lowerLeft"		file="images/window_elements.png" gammagroup="Buttons" x="1" y="166" h="2" w="2"/>
+	<bitmap id="studio.button.bottom"			file="images/window_elements.png" gammagroup="Buttons" x="5" y="166" h="2" w="25"/>
+	<bitmap id="studio.button.lowerRight"		file="images/window_elements.png" gammagroup="Buttons" x="32" y="166 " h="2" w="2"/>
+	<bitmap id="studio.button.pressed.upperLeft"	file="images/window_elements.png" gammagroup="Buttons" x="71" y="135" h="2" w="2"/>
+	<bitmap id="studio.button.pressed.top"		file="images/window_elements.png" gammagroup="Buttons" x="75" y="135" h="2" w="25"/>
+	<bitmap id="studio.button.pressed.upperRight"	file="images/window_elements.png" gammagroup="Buttons" x="102" y="135" h="2" w="2"/>
+	<bitmap id="studio.button.pressed.left"		file="images/window_elements.png" gammagroup="Buttons" x="71" y="139" h="25" w="2"/>
+	<bitmap id="studio.button.pressed.middle"		file="images/window_elements.png" gammagroup="Buttons" x="75" y="139" h="25" w="25"/>
+	<bitmap id="studio.button.pressed.right"		file="images/window_elements.png" gammagroup="Buttons" x="102" y="139" h="25" w="2"/>
+	<bitmap id="studio.button.pressed.lowerLeft"	file="images/window_elements.png" gammagroup="Buttons" x="71" y="166" h="2" w="2"/>
+	<bitmap id="studio.button.pressed.bottom"		file="images/window_elements.png" gammagroup="Buttons" x="75" y="166" h="2" w="25"/>
+	<bitmap id="studio.button.pressed.lowerRight"	file="images/window_elements.png" gammagroup="Buttons" x="102" y="166 " h="2" w="2"/>
+
+
+	<!-- Component status bar -->
+	<bitmap id="studio.statusbar.left" file="images/window_elements.png" x="94" y="0" h="12" w="12"/>
+	<bitmap id="studio.statusbar.middle" file="images/window_elements.png" x="107" y="0" h="12" w="12"/>
+	<bitmap id="studio.statusbar.right" file="images/window_elements.png" x="120" y="0" h="12" w="12"/>
+
+
+	<!-- Checkboxes -->
+	<bitmap id="studio.button.checkbox.checked" file="images/window_elements.png" x="58" y="77" h="11" w="11"/>
+	<bitmap id="studio.button.checkbox.unchecked" file="images/window_elements.png" x="58" y="66" h="11" w="11"/>
+
+
+	<!-- Right-Click Menu -->
+	<bitmap id="studio.button.checkmark" gammagroup="Background" file="images/menu_icon_check.png"/>
+	<bitmap id="studio.popup.seperator" gammagroup="Background" file="images/menu_divider.png"/>
+	<bitmap id="studio.popup.background" gammagroup="Background" file="images/menu_background.png"/>
+	<bitmap id="studio.popup.border.topLeft" gammagroup="Background" file="images/menu_topleft.png"/>
+	<bitmap id="studio.popup.border.topRight" gammagroup="Background" file="images/menu_topright.png"/>
+	<bitmap id="studio.popup.border.bottomLeft" gammagroup="Background" file="images/menu_bottomleft.png"/>
+	<bitmap id="studio.popup.border.bottomRight" gammagroup="Background" file="images/menu_bottomright.png"/>
+	<bitmap id="studio.popup.border.left" gammagroup="Background" file="images/menu_left.png"/>
+	<bitmap id="studio.popup.border.right" gammagroup="Background" file="images/menu_right.png"/>
+	<bitmap id="studio.popup.border.top" gammagroup="Background" file="images/menu_top.png"/>
+	<bitmap id="studio.popup.border.bottom" gammagroup="Background" file="images/menu_bottom.png"/>
+	<bitmap id="studio.popup.submenuIcon" gammagroup="Background" file="images/menu_icon_submenu.png"/>
+
+
+	<!-- Window Elements -->
+	<bitmap id="studio.framewnd.verticaldivider" file="images/window_elements.png" x="124" y="53" h="65" w="8"/> 
+	<bitmap id="studio.framewnd.verticalgrabber" file="images/window_elements.png" x="115" y="53" h="65" w="8"/>
+	<bitmap id="studio.framewnd.horizontaldivider" file="images/window_elements.png" x="40" y="97" h="8" w="65"/>
+	<bitmap id="studio.framewnd.horizontalgrabber" file="images/window_elements.png" x="40" y="106" h="8" w="65"/>
+	<bitmap id="studio.framewnd.windowshade" file="images/framewindow_shade.png"/>
+
+
+	<!-- List and Tree Background -->
+	<bitmap id="studio.list.background" gammagroup="Background" file="images/menu_background.png"/> 
+    	<bitmap id="studio.tree.background" gammagroup="Background" file="images/menu_background.png"/> 
+
+
+	<!-- Default Button Images -->
+	<bitmap id="studio.button.upperLeft"	file="images/window_elements.png" gammagroup="Background" x="1" y="135" h="2" w="2"/>
+	<bitmap id="studio.button.top"		file="images/window_elements.png" gammagroup="Background" x="5" y="135" h="2" w="25"/>
+	<bitmap id="studio.button.upperRight"	file="images/window_elements.png" gammagroup="Background" x="32" y="135" h="2" w="2"/>
+	<bitmap id="studio.button.left"		file="images/window_elements.png" gammagroup="Background" x="1" y="139" h="25" w="2"/>
+	<bitmap id="studio.button.middle"		file="images/window_elements.png" gammagroup="Background" x="5" y="139" h="25" w="25"/>
+	<bitmap id="studio.button.right"		file="images/window_elements.png" gammagroup="Background" x="32" y="139" h="25" w="2"/>
+	<bitmap id="studio.button.lowerLeft"	file="images/window_elements.png" gammagroup="Background" x="1" y="166" h="2" w="2"/>
+	<bitmap id="studio.button.bottom"		file="images/window_elements.png" gammagroup="Background" x="5" y="166" h="2" w="25"/>
+	<bitmap id="studio.button.lowerRight"	file="images/window_elements.png" gammagroup="Background" x="32" y="166 " h="2" w="2"/>
+
+
+	<!-- Fonts -->
+	<bitmapfont id="studio.component.statusbar" file="fonts/status.png" gammagroup="Text" charwidth="5" charheight="6" hspacing="0" vspacing="0"/>
+	<bitmapfont id="font.defined" file="fonts/defined.png" gammagroup="Text" charwidth="5" charheight="6" hspacing="0" vspacing="0"/>
+	<truetypefont id="font.BankGothic" file="fonts/Tt0589m_.ttf" gammagroup="Title"/>
+
+
+	<!-- Generic Trees -->
+	<color id="studio.tree.text" value="92,61,0" gammagroup="Text"/>		<!-- Item text color -->
+	<color id="studio.tree.selected" value="180,180,180" gammagroup="Text"/>	<!-- Select item text background color -->
+	<color id="studio.tree.hilited" value="255,255,255" gammagroup="Text"/>	<!-- Hilited item text background color -->
+	<color id="studio.tree.hiliteddrop" value="255,255,255"/>			<!-- Drop marker color -->
+	<color id="studio.list.item.selected.fg" value="92,61,0"/>			<!-- selected item text foreground color -->
+
+
+	<!-- Generic Lists -->
+	<color id="studio.list.text" value="92,61,0" gammagroup="Text"/>				<!-- List item text color -->
+	<color id="studio.list.item.selected" value="255,255,255" gammagroup="Background"/>	<!-- Selected item text background color -->
+	<color id="studio.list.item.focused" value="255,255,255" gammagroup="Background"/>		<!-- Focused item text background color -->
+	<color id="studio.list.column.background" value="102,102,102" gammagroup="Background"/>	<!-- Columns background color -->
+	<color id="studio.list.column.text" value="255,255,255" gammagroup="Text"/>			<!-- Columns text color -->
+
+
+	<!-- Item Lists -->
+	<color id="common.itemlist.outline.current" value="0,0,0"/>		<!-- Currently playing outline color -->
+	<color id="common.itemlist.outline.focus" value="255,255,255"/>	<!-- Focused item dashed outline color -->
+
+
+	<!-- Media Library Results List -->
+	<color id="library.list.results.text" value="92,61,0" gammagroup="Text"/>	<!-- list item text color -->
+ </elements>

@@ -1,0 +1,33 @@
+<!-- Background, Foreground, Thinger icons, Buttons, Eyes, Text, Title -->
+
+<gammaset id="Default"></gammaset>
+
+<gammaset id="Sunburn">
+	<gammagroup id="Background" value="1000,-400,-1000"/>
+	<gammagroup id="Foreground" value="-1000,-400,2000"/>
+	<gammagroup id="Thinger icons" value="1000,-400,-1000"/>
+	<gammagroup id="Buttons" value="1500,-500,-1000"/>
+	<gammagroup id="Eyes" value="2000,0,0"/>
+	<gammagroup id="Text" value="2000,0,0"/>
+	<gammagroup id="Title" value="2000,0,0"/>
+</gammaset>
+
+<gammaset id="Envy">
+	<gammagroup id="Background" value="-1000,-400,-1000"/>
+	<gammagroup id="Foreground" value="-400,-400,-2000"/>
+	<gammagroup id="Thinger icons" value="2016,4072,2016"/>
+	<gammagroup id="Buttons" value="-2000,1000,1000"/>
+	<gammagroup id="Eyes" value="2000,2000,0"/>
+	<gammagroup id="Text" value="2000,2000,2000"/>
+	<gammagroup id="Title" value="2000,2000,2000"/>
+</gammaset>
+
+<gammaset id="Night">
+	<gammagroup id="Background" value="-1606,-1407,-762"/>
+	<gammagroup id="Foreground" value="-1606,-1407,-762"/>
+	<gammagroup id="Thinger icons" value="4000,4000,4000"/>
+	<gammagroup id="Buttons" value="1000,1000,2000"/>
+	<gammagroup id="Eyes" value="2000,2000,2000"/>
+	<gammagroup id="Text" value="2000,2000,2000"/>
+	<gammagroup id="Title" value="2000,2000,2000"/>
+</gammaset>

@@ -1,0 +1,59 @@
+<groupdef id="thinger.content.group">
+	<componentbucket
+		id="Component list"
+		x="6" y="1"
+		w="243" h="31"
+	/>
+</groupdef>
+
+<layout id="full" default_h="62" minimum_h="62" maximum_h="62" default_w="275" minimum_w="275" maximum_w="275">
+	<Wasabi:StandardFrame:NoStatus 
+		x="0" y="0" w="0" h="0" relatw="1" relath="1" 
+		content="thinger.content.group" 
+		padtitleright="0"
+	/>
+
+	<layer
+		id="filler"
+		w="265" h="10"
+		y="47" x="5"
+		image="thinger.cover"
+	/>
+
+	<button
+		id="winshade" tooltip="Toggle Windowshade mode"
+		action="SWITCH" param="shade"
+		x="244" y="3"
+		image="global.button.shade"
+		downImage="global.button.shade.pressed"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="ScrollLeft"
+		action="CB_PREV"
+		x="7" y="15" h="31"
+		image="thinger.scroll.left"
+		downImage="thinger.scroll.left.pressed"
+		tooltip="Scroll Left"
+	/>
+
+	<button
+		id="ScrollRight"
+		action="CB_NEXT"
+		x="255" y="15" h="31"
+		image="thinger.scroll.right"
+		downImage="thinger.scroll.right.pressed"
+		tooltip="Scroll Right"
+	/>
+
+	<text
+		id="cbtext"
+		display="componentbucket"
+		x="5" y="47"
+		w="265" h="15"
+		font="font.defined"
+		move="1"
+		dblClickAction="SWITCH;shade"
+	/>
+</layout>

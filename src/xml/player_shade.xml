@@ -1,0 +1,144 @@
+<layout id="shade" background="player.shade.bg" inactive="player.shade.bg">
+	<layer id="placeholder" x="0" y="0" image="player.shade.placeHolder"/>
+
+	<text
+		id="title"
+		x="20"
+		y="0"
+		font="font.BankGothic"
+		fontsize="13"
+		color="0,0,0"
+		move="1"
+		text="OrbFc"
+		inactiveAlpha="128"
+		dblClickAction="SWITCH;normal"
+	/>
+
+	<button 
+		id="Previous"
+		action="PREV" 
+		x="153" y="3" 
+		image="player.shade.button.previous" 
+		downImage="player.shade.button.previous.pressed" 
+		tooltip="Previous"
+	/>
+
+	<button
+		id="Play"
+		action="PLAY"
+		x="166" y="3"
+		image="player.shade.button.play"
+		downImage="player.shade.button.play.pressed"
+		tooltip="Play"
+	/>
+
+	<button
+		id="Pause"
+		action="PAUSE"
+		x="176" y="3"
+		image="player.shade.button.pause"
+		downImage="player.shade.button.pause.pressed"
+		tooltip="Pause"
+	/>
+
+	<button
+		id="Stop"
+		action="STOP"
+		x="186" y="3"
+		image="player.shade.button.stop"
+		downImage="player.shade.button.stop.pressed"
+		tooltip="Stop"
+	/>
+
+	<button
+		id="Next"
+		action="NEXT"
+		x="196" y="3"
+		image="player.shade.button.next"
+		downImage="player.shade.button.next.pressed"
+		tooltip="Next"
+	/>
+
+	<button
+		id="Eject"
+		action="EJECT"
+		x="209" y="3"
+		image="player.shade.button.eject"
+		downImage="player.shade.button.eject.pressed"
+		tooltip="Eject"
+	/>
+
+	<text
+		id="timer"
+		display="time"
+		x="116" y="2"
+		w="30" h="10"
+		font="studio.component.statusbar" fontsize="13" align="right"
+	/>
+	
+	<vis
+		id="vis"
+		x="74" y="3"
+		w="38" h="8"
+		colorband16="93,192,255"
+		colorband15="255,255,255"
+		colorband14="255,254,215"
+		colorband13="255,252,185"
+		colorband12="255,248,170"
+		colorband11="255,244,165"
+		colorband10="255,240,150"
+		colorband9="255,234,135"
+		colorband8="255,232,120"
+		colorband7="255,230,105"
+		colorband6="255,227,90"
+		colorband5="255,225,75"
+		colorband4="255,222,60"
+		colorband3="255,220,45"
+		colorband2="255,217,30"
+		colorband1="255,207,15"
+		colorbandpeak="255,255,255"
+		colorosc1="0,0,0"
+		colorosc2="0,10,0"
+		colorosc3="0,20,0"
+		colorosc4="0,30,0"
+		colorosc5="0,40,0"
+	/>
+
+	<button
+		id="sysbutton"
+		action="SYSMENU"
+		x="5" y="3"
+		image="global.button.menu"
+		downImage="global.button.menu.pressed"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="Minimize"
+		action="MINIMIZE"
+		x="228" y="3"
+		image="global.button.minimize"
+		downImage="global.button.minimize.pressed"
+		tooltip="Minimize Winamp"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="shade" tooltip="Toggle Windowshade mode"
+		action="SWITCH" param="normal"
+		x="244" y="3"
+		image="global.button.shade3"
+		downImage="global.button.shade3.pressed"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="Close"
+		action="CLOSE"
+		x="260" y="3"
+		image="global.button.close"
+		downImage="global.button.close.pressed"
+		tooltip="Exit Winamp"
+		inactiveAlpha="200"
+	/>
+</layout>

@@ -1,0 +1,71 @@
+<layout id="shade" background="equalizer.winshade.bg">
+	<layer id="placeholder" x="0" y="0" image="equalizer.winshade.placeHolder"/>
+
+	<slider
+		id="Volume"
+		action="VOLUME"
+		x="71" y="3"
+		w="59" h="9"
+		thumb="equalizer.winshade.button.slider"
+		downThumb="equalizer.winshade.button.slider.pressed"
+	/>
+
+	<slider
+		id="Seeker"
+		action="SEEK"
+		x="132" y="3"
+		w="94" h="9"
+		thumb="equalizer.winshade.button.slider"
+		downThumb="equalizer.winshade.button.slider.pressed"
+	/>
+
+	<button
+		id="sysbutton"
+		action="SYSMENU"
+		x="5" y="3"
+		image="global.button.menu"
+		downImage="global.button.menu.pressed"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="advanced.eq" tooltip="Advanced Equalizer"
+		action="SWITCH" param="advanced"
+		x="-47" relatx="1" y="3"
+		image="global.button.extend"
+		downImage="global.button.extend.pressed"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="shade" tooltip="Toggle Windowshade mode"
+		action="SWITCH" param="open"
+		x="244" y="3"
+		image="global.button.shade2"
+		downImage="global.button.shade2.pressed"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="Close"
+		action="CLOSE"
+		x="260" y="3"
+		image="global.button.close"
+		downImage="global.button.close.pressed"
+		tooltip="Close Equalizer"
+		inactiveAlpha="200"
+	/>
+
+	<text
+		id="title"
+		x="20"
+		y="0"
+		font="font.BankGothic"
+		fontsize="13"
+		color="0,0,0"
+		move="1"
+		text="OrbEq"
+		inactiveAlpha="128"
+		dblClickAction="SWITCH;normal"
+	/>
+</layout>

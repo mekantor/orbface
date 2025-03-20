@@ -1,0 +1,4 @@
+<container id="Main" name="Main Window" default_x="0" default_y="0" default_visible="1">
+	<include file="player_full.xml"/>
+	<include file="player_shade.xml"/>
+</container>

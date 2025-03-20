@@ -1,0 +1,90 @@
+<groupdef id="studio.standardframe">
+	<layer dblClickAction="SWITCH;shade" id="topleftcorner"	x="0"		y="0"	image="global.bg.tl" ghost="0" sysregion="1"/>
+	<layer dblClickAction="SWITCH;shade" id="topstretch"		x="100"	y="0"	image="global.bg.tc" w="1600" move="1" sysregion="1"/>
+	<layer dblClickAction="SWITCH;shade" id="toprightcorner"	x="-121"	y="0"	image="global.bg.tr" relatx="1" sysregion="1"/>
+	<layer dblClickAction="SWITCH;shade" id="playlist.full.tl2"	x="0"		y="0"	image="global.bg.tl2" sysregion="1" resize="topleft"/>
+	<layer dblClickAction="SWITCH;shade" id="playlist.full.tc2"	x="5"		y="0"	image="global.bg.tc2" sysregion="1" w="1600" relatw="1" resize="top"/>
+	<layer dblClickAction="SWITCH;shade" id="playlist.full.tr2"	x="-5"		y="0"	image="global.bg.tr2" sysregion="1" relatx="1" resize="topright"/>
+	<layer dblClickAction="SWITCH;shade" id="leftstretch"		x="0"		y="5"	image="global.bg.ml" sysregion="1" h="1600" relath="1" resize="left"/>
+	<layer dblClickAction="SWITCH;shade" id="playlist.full.p1"	x="5"		y="13"	image="global.bg.bp" h="1600" relath="1"/>
+	<layer dblClickAction="SWITCH;shade" id="rightstretch"		x="-5"		y="5"	image="global.bg.mr" sysregion="1" h="1600" relatx="1" relath="1" resize="right"/>
+	<layer dblClickAction="SWITCH;shade" id="playlist.full.p2"	x="-6"		y="13"	image="global.bg.bp" h="1600" relatx="1" relath="1"/>
+	<layer dblClickAction="SWITCH;shade" id="bottomleftcorner"	x="0"		y="-5"	image="global.bg.bl" relaty="1" resize="bottomleft" sysregion="1"/>
+	<layer dblClickAction="SWITCH;shade" id="bottomstretch"	x="5"		y="-5"	image="global.bg.bc" w="1600" relaty="1" relatw="1" resize="bottom" sysregion="1"/>
+	<layer dblClickAction="SWITCH;shade" id="playlist.full.p3"	x="6"		y="-6"	image="global.bg.bp" w="1600" relaty="1" relatw="1"/>
+	<layer dblClickAction="SWITCH;shade" id="bottomrightcorner"	x="-5"		y="-6"	image="global.bg.br" relatx="1" relaty="1" resize="bottomright" scale="bottomright" sysregion="1"/>
+
+	<text
+		id="titlebar"
+		ghost="1"
+		x="28"
+		y="-2"
+		w="-55"
+		relatw="1"
+		h="20"
+		align="Center"
+		default=":componentname"
+		font="font.BankGothic"
+		bold="0"
+		fontsize="13"
+		color="0,0,0"
+		doborder="0"
+		border="0"
+		move="1"
+		inactiveAlpha="128"
+	/>
+
+	<button
+		id="sysbutton"
+		action="SYSMENU"
+		x="5" y="3"
+		image="global.button.menu"
+		downImage="global.button.menu.pressed"
+		tooptip="Winamp Menu"
+		inactiveAlpha="200"
+	/>
+
+
+	<button
+		id="Close" 
+		action="CLOSE"
+		x="-15" y="3" relatx="1"
+		image="global.button.close"
+		downImage="global.button.close.pressed"
+		tooltip="Close"
+		inactiveAlpha="200"
+	/>
+
+	<layer x="0" y="0" w="0" h="0" image="studio.config.textbg"
+		relatw="1"
+		id="cfg.bg"
+	/>
+
+	<group id="wasabi.titlebar" x="0" y="0" w="0" h="0"/>
+</groupdef>
+
+<groupdef id="wasabi.standardframe.statusbar" inherit_content="0">
+	<group id="studio.standardframe" x="0" y="0" w="0" relatw="1" h="0" relath="1"/>
+	<LayoutStatus id="standardframe.layoutstatus" x="6" y="-20" relaty="1" w="-12" relatw="1" h="15" exclude="{system}"/>
+	<script id="standardframe.script" file="scripts/standardframe.maki" param="6,14,-12,-34,0,0,1,1"/>
+</groupdef>
+
+<groupdef id="wasabi.standardframe.nostatusbar" inherit_content="0">
+	<group id="studio.standardframe" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+	<script id="standardframe.script" file="scripts/standardframe.maki" param="6,14,-12,-20,0,0,1,1"/>
+</groupdef>
+
+<groupdef id="wasabi.standardframe.modal" inherit_group="wasabi.standardframe.nostatusbar">
+	<group 
+		id="wasabi.panel"
+		x="5" y="15"
+		w="0" h="0"
+		relatw="1" relath="1"
+	/>
+
+	<hideobject target="cornerresize"/>
+</groupdef>
+
+<groupdef id="wasabi.standardframe.static" inherit_group="wasabi.standardframe.nostatusbar">
+	<hideobject target="cornerresize"/>
+</groupdef>

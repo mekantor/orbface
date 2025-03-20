@@ -1,0 +1,5 @@
+<container id="eq" name="Equalizer" default_visible="0">
+	<include file="equalizer_normal.xml"/>
+	<include file="equalizer_advanced.xml"/>
+	<include file="equalizer_shade.xml"/>
+</container>

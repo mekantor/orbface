@@ -1,0 +1,63 @@
+<layout id="shade" background="thinger.winshade.bg">
+	<button
+		id="sysbutton"
+		action="SYSMENU"
+		x="5" y="3"
+		image="global.button.menu"
+		downImage="global.button.menu.pressed"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="winshade" tooltip="Toggle Windowshade mode"
+		action="SWITCH" param="open"
+		x="244" y="3"
+		image="global.button.shade2"
+		downImage="global.button.shade2.pressed"
+		inactiveAlpha="200"
+	/>
+
+	<button
+		id="Close"
+		action="CLOSE"
+		x="260" y="3"
+		image="global.button.close"
+		downImage="global.button.close.pressed"
+		tooltip="Close Window"
+		inactiveAlpha="200"
+	/>
+
+	<componentbucket
+		id="Component list"
+		x="33" y="1"
+		w="100" h="12"
+	/>
+
+	<button
+		id="ScrollLeft"
+		action="CB_PREV"
+		x="21" y="3"
+		image="thinger.scroll.shade.left"
+		downImage="thinger.scroll.shade.left.pressed"
+		tooltip="Scroll Left"
+	/>
+
+	<button
+		id="ScrollRight"
+		action="CB_NEXT"
+		x="135" y="3"
+		image="thinger.scroll.shade.right"
+		downImage="thinger.scroll.shade.right.pressed"
+		tooltip="Scroll Right"
+	/>
+
+	<text
+		id="cbtext"
+		display="componentbucket"
+		x="147" y="2"
+		w="95" h="13"
+		font="font.defined"
+		move="1"
+		dblClickAction="SWITCH;full"
+	/>
+</layout>

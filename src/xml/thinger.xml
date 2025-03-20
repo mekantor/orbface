@@ -1,0 +1,4 @@
+<container id="thinger" name="Thinger" default_x="0" default_y="232" default_visible="1">
+	<include file="thinger_full.xml"/>
+	<include file="thinger_shade.xml"/>
+</container>

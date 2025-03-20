@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<WinampAbstractionLayer version="0.8">
+	<skininfo>
+		<version>1</version>
+		<name>OrbFace</name>
+		<comment>Personally, I think it looks like a face.... well, use your imagination.</comment>
+		<author>Michael Kantor</author>
+		<email>mike@mikekantor.com</email>
+		<homepage>http://www.mikekantor.com/</homepage>
+		<screenshot>skinshot.png</screenshot>
+	</skininfo>
+
+	<include file="xml/studio.xml"/>
+	<include file="xml/components.xml"/>
+	<include file="xml/player.xml"/>
+	<include file="xml/playlist.xml"/>
+	<include file="xml/equalizer.xml"/>
+	<include file="xml/thinger.xml"/>
+	<include file="xml/video.xml"/>
+	<include file="xml/scripts.xml"/>
+	<include file="xml/gamma.xml"/>
+	<include file="@COLORTHEMESPATH@*.xml"/>
+</WinampAbstractionLayer>
